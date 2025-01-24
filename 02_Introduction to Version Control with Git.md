@@ -145,6 +145,40 @@ This creates a hidden `.git` folder that tracks all changes.
      ```
    - Observe the commit hash, author, date, and message.
 
+## Updating Git Defaults for Inclusivity
+
+### Why Change the Default Branch Name?
+
+Traditionally, Git repositories use `master` as the default branch name. However, to promote inclusivity and remove language that might be perceived as insensitive, the Git community has adopted `main` as the new default branch name. Many platforms, like GitHub, now use `main` by default for new repositories.
+
+### How to Set `main` as the Default Branch
+
+1. **Configure Git Globally:**
+   You can set `main` as the default branch for all new repositories by running:
+
+   ```bash
+   git config --global init.defaultBranch main
+   ```
+
+   This ensures that whenever you initialise a new repository, the default branch will be named `main`.
+
+2. **Change an Existing Repository's Default Branch:**
+
+   If you already have a repository where the default branch is `master`, you can rename it:
+
+   ```bash
+   git branch -m master main
+   git push -u origin main
+   ```
+
+   This renames the branch locally and updates the remote repository.
+
+### Best Practices for Working with Default Branches
+
+- Always align your local repository's default branch with the remote repository.
+- Inform collaborators about the branch name change to avoid confusion.
+- When contributing to open-source projects, check the project's default branch before starting work.
+
 ## Key Takeaways
 
 - Git helps you manage changes in your project.
