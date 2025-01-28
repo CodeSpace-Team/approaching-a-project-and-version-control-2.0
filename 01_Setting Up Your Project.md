@@ -64,6 +64,10 @@ my-project/
 - Keep all images in a dedicated `images`/ folder for easy reference.
 - Use meaningful, descriptive names for files and folders (e.g., `user-profile.png` instead of `img1.png`)..
 
+**Notice:**
+
+In the upcoming modules, you will learn in detail about what HTML and CSS are and how they work. For now, focus on creating the files (`index.html`, `styles.css`, and `README.md`) and copying the provided code snippets into these files. This will help you set up a project structure and explore tools like VS Code and Live Server. Later lessons in this module will also guide you extensively on creating a `README.md` file and using it for Git practices.
+
 ## Understanding the Role of Core Files
 
 ### index.html:
