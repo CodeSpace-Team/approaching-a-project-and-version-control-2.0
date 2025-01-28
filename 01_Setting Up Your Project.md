@@ -66,7 +66,7 @@ my-project/
 
 **Notice:**
 
-In the upcoming modules, you will learn in detail about what HTML and CSS are and how they work. For now, focus on creating the files (`index.html`, `styles.css`, and `README.md`) and copying the provided code snippets into these files. This will help you set up a project structure and explore tools like VS Code and Live Server. Later lessons in this module will also guide you extensively on creating a `README.md` file and using it for Git practices.
+In the upcoming modules, you will learn in detail about what HTML and CSS are and how they work. For now, focus on creating project folder and files (`index.html`, `styles.css`, and `README.md`) and copying the provided code snippets into these files. This will help you set up a project structure and explore tools like VS Code and Live Server. Later lessons in this module will also guide you extensively on creating a `README.md` file and using it for Git practices.
 
 ## Understanding the Role of Core Files
 
@@ -146,7 +146,9 @@ VS Code has a powerful extensions marketplace. Here's how to set up useful tools
 ### Installing Extensions:
 
 - Click on the Extensions icon in the left sidebar (it looks like four squares).
-- Search for the desired extension and click Install.
+  ![Extensions](./images/Extensions.png)
+- Search for the desired extension and click Install. Go ahead and install the Live Server Extension.
+  ![Live server](./images/Live%20Server.png)
 
 ### Recommended Extensions for Beginners:
 
@@ -165,6 +167,7 @@ VS Code has a powerful extensions marketplace. Here's how to set up useful tools
 
 1. Open your index.html file in VS Code.
 2. Right-click anywhere in the editor and select "Open with Live Server".
+   <img src="./images/Opening with Live Server.png" alt="Open with Live Server" width="500" height="400">
 3. Your default web browser will open, displaying your index.html page.
 4. Live Reload: Any changes you make in your code will automatically refresh the browser view.
 
@@ -173,10 +176,17 @@ VS Code has a powerful extensions marketplace. Here's how to set up useful tools
 **Explorer Panel:**
 
 - Located on the left, shows all files in your project folder.
-  **Editor Area:**
+  <img src="./images/Explorer Panel.png" alt="Open with Live Server" width="500" height="400">
+
+**Editor Area:**
+
 - The central area where you write and edit your code.
-  **Status Bar:**
+  <img src="./images/Editor Area.png" alt="Open with Live Server" width="500" height="400">
+
+**Status Bar:**
+
 - At the bottom, displays information like the file type, line/column numbers, and Git branch.
+  <img src="./images/Status Bar.png" alt="Open with Live Server" width="500" height="400">
 
 ## Using the Integrated Terminal
 
@@ -185,14 +195,15 @@ The terminal in VS Code allows you to run commands without leaving the editor.
 1. Opening the Terminal:
 
    - Go to View > Terminal or press Ctrl + `` (backtick key) on your keyboard.
+     <img src="./images/Opening Terminal.png" alt="Open with Live Server" width="500" height="400">
 
-2. What the Terminal is For:
+1. What the Terminal is For:
 
    - Running Git commands (e.g., `git init`, `git commit`).
    - Installing and managing packages/tools.
    - Running scripts in projects (e.g., starting a development server).
 
-3. Basic Terminal Commands for Beginners:
+1. Basic Terminal Commands for Beginners:
    - `ls` (Mac/Linux) or `dir` (Windows): Lists files in the current directory.
    - `cd foldername`: Navigates into a folder.
    - `cd ..`: Moves up one directory level.
