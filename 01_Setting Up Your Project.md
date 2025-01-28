@@ -146,7 +146,9 @@ VS Code has a powerful extensions marketplace. Here's how to set up useful tools
 ### Installing Extensions:
 
 - Click on the Extensions icon in the left sidebar (it looks like four squares).
+
   ![Extensions](./images/Extensions.png)
+
 - Search for the desired extension and click Install. Go ahead and install the Live Server Extension.
   ![Live server](./images/Live%20Server.png)
 
@@ -176,11 +178,13 @@ VS Code has a powerful extensions marketplace. Here's how to set up useful tools
 **Explorer Panel:**
 
 - Located on the left, shows all files in your project folder.
+
   <img src="./images/Explorer Panel.png" alt="Open with Live Server" width="500" height="400">
 
 **Editor Area:**
 
 - The central area where you write and edit your code.
+
   <img src="./images/Editor Area.png" alt="Open with Live Server" width="500" height="400">
 
 **Status Bar:**
