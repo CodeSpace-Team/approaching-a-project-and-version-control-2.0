@@ -12,6 +12,38 @@
 **Example:**
 Imagine trying to find a misplaced file in a folder filled with hundreds of unlabelled items. Organisation saves time and prevents confusion!
 
+## Best Practices for Naming Projects and Files
+
+Effective naming conventions are a key part of maintaining organisation.
+
+### Why Naming Matters
+
+- Descriptive names make it easier to understand the purpose of a file or folder at a glance.
+- Consistent naming ensures predictability and reduces errors when referencing files in your code.
+
+### General Guidelines
+
+1. **Be Descriptive and Specific:**
+   - Use names that reflect the file or folder’s purpose.
+   - Example:
+     - **Good:** `contact-form.html`
+     - **Bad:** `form1.html`
+2. **Stick to Lowercase Letters:**
+   - Avoid uppercase to prevent issues in case-sensitive systems.
+   - Use hyphens (`-`) to separate words instead of spaces.
+   - Example: `project-overview.md` instead of `Project Overview.md`.
+3. **Follow a Logical Structure:**
+   - Group related files together (e.g., all images in an `images/` folder).
+4. **Avoid Special Characters:**
+   - Stick to letters, numbers, hyphens, and underscores.
+
+### Naming Your Project
+
+- Use a name that reflects the project's purpose or theme.
+- Example:
+  - A portfolio project might be named portfolio-site.
+  - A weather app could be named weather-tracker.
+
 ## File and Folder Structure for Web Projects
 
 **Recommended Basic Structure:**
@@ -27,10 +59,10 @@ my-project/
 
 **Key Points:**
 
-- The index.html file serves as the entry point of your web project.
-- The styles.css file contains all the visual styling rules.
-- Keep all images in a dedicated images/ folder for easy reference.
-- Use meaningful, descriptive names for files and folders.
+- The `index.htm`l file serves as the entry point of your web project.
+- The `styles.css` file contains all the visual styling rules.
+- Keep all images in a dedicated `images`/ folder for easy reference.
+- Use meaningful, descriptive names for files and folders (e.g., `user-profile.png` instead of `img1.png`)..
 
 ## Understanding the Role of Core Files
 
