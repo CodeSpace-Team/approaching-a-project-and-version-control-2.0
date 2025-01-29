@@ -29,10 +29,6 @@ Git is a powerful version control tool that helps you track changes in your proj
 - **Fast and Lightweight:** Designed for speed and efficiency.
 - **Widely Used:** It’s the most popular version control tool, supported by platforms like GitHub, GitLab, and Bitbucket.
 
-**Illustration:**
-
-_A diagram showing how Git tracks file changes in a local repository and synchronises with a remote repository._
-
 ## Setting Up Git on Your System
 
 ### Installing Git
@@ -55,11 +51,7 @@ _A diagram showing how Git tracks file changes in a local repository and synchro
 
 ### Step 1: Navigate to Your Project Folder
 
-Open your terminal and use the cd command to move into your project directory:
-
-```bash
-cd path/to/your/project
-```
+Open your project in VS Code and open the terminal integrated into VS Code.
 
 ### Step 2: Initialise a Git Repository
 
@@ -87,10 +79,6 @@ This creates a hidden `.git` folder that tracks all changes.
      git add .
      ```
 
-     **Illustration:**
-
-     _A visual representation showing the movement of a file from the working directory to the staging area._
-
 2. **Committing Changes** (`git commit`)
 
    Once your changes are staged, commit them to save a snapshot of your work:
@@ -99,8 +87,7 @@ This creates a hidden `.git` folder that tracks all changes.
    git commit -m "Your commit message"
    ```
 
-   - **Commit Message Tips:** Write a clear, concise description of what you’ve done (e.g., "Added homepage layout").
-   -
+   - **Commit Message Tips:** Write a clear, concise description of what you’ve done (e.g., "Adds homepage layout").
 
 ## Tracking Changes Locally
 
@@ -116,18 +103,50 @@ This creates a hidden `.git` folder that tracks all changes.
 2. Staging Area: Files prepared for a snapshot.
 3. Repository: The saved snapshot (commit).
 
+   <img src="./images/git local repo.png" alt="Git local and remote" width="400" height="250">
+
 ## Activity: Your First Git Workflow
 
 1. **Initialise a Repository:**
 
-   - Create a folder named `my-first-project`.
-   - Inside, add an `index.html` file with a basic HTML structure.
-
-2. **Run Git Commands:**
-
-   - Initialise Git:
+   - Open the `my-project` folder (created in lesson 1) in VS Code.
+   - Open the terminal in VS code and run the command below to initialise Git
      ```bash
      git init
+     ```
+
+2. **Adding Existing files:**
+
+   - After initializing git, you will notice some existing files changing to green in colour, this means they have changes that are currently untracked in git, you need to stage and commit them to be saved to the repo.
+
+     On **VS Code Activity Bar** (very left panel) there is a Source Control icon, clicking it will open the Source Control panel which can help you visualize and make git changes. On the image below it shows that there are 3 new `**Untracked (U)**` files.
+
+      <img src="./images/VS git gui and unstanged changes.png" width="240" height="200">
+
+     These files are not currently being tracked by Git. They has been created or added to your workspace but haven't been staged or committed yet.
+
+   - Run git the following command to stage all files.
+
+     ```
+     git add .
+     ```
+
+     After running the above command, your files will move to the `Staged` area.
+
+      <img src="./images/Changes after staging.png" width="240" height="200">
+
+     The commit message can be written in the input bar just above the blue **Commit** button and then pressing the Commit button or it can be writen in the terminal as previously done
+
+   - Commit your changes:
+     ```bash
+     git commit -m "Adds index, styles and readme files"
+     ```
+
+3. **Making changes:**
+
+   - Make some changes to your index.html file like changing the text within h1 tag to "Welcome to My **First** Project"
+     ```html
+     <h1>Welcome to My First Project</h1>
      ```
    - Stage your file:
      ```bash
@@ -135,10 +154,10 @@ This creates a hidden `.git` folder that tracks all changes.
      ```
    - Commit your changes:
      ```bash
-     git commit -m "Initial commit with index.html"
+     git commit -m "Modifies project heading"
      ```
 
-3. **Check the Commit History:**
+4. **Check the Commit History:**
    - Use the command:
      ```bash
      git log
@@ -151,9 +170,25 @@ This creates a hidden `.git` folder that tracks all changes.
 
 Traditionally, Git repositories use `master` as the default branch name. However, to promote inclusivity and remove language that might be perceived as insensitive, the Git community has adopted `main` as the new default branch name. Many platforms, like GitHub, now use `main` by default for new repositories.
 
+The very bottom left of VS Code (left part if status bar) shows the branch name, which should be `master` by default
+
+<img src="./images/Git branch in VS Status bar.png">
+
 ### How to Set `main` as the Default Branch
 
-1. **Configure Git Globally:**
+1. **Change an Existing Repository's Default Branch:**
+
+   If you already have a repository where the default branch is `master`, you can rename it:
+
+   ```bash
+   git branch -m master main
+   ```
+
+   This renames the branch locally. The branch name on the status bar will update from `master`to `main`after a successful change.
+
+   <img src="./images/Branch name changes to main.png">
+
+2. **Configure Git Globally:**
    You can set `main` as the default branch for all new repositories by running:
 
    ```bash
@@ -161,17 +196,6 @@ Traditionally, Git repositories use `master` as the default branch name. However
    ```
 
    This ensures that whenever you initialise a new repository, the default branch will be named `main`.
-
-2. **Change an Existing Repository's Default Branch:**
-
-   If you already have a repository where the default branch is `master`, you can rename it:
-
-   ```bash
-   git branch -m master main
-   git push -u origin main
-   ```
-
-   This renames the branch locally and updates the remote repository.
 
 ### Best Practices for Working with Default Branches
 

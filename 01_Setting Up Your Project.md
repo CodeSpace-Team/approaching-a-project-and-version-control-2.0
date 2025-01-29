@@ -175,6 +175,12 @@ VS Code has a powerful extensions marketplace. Here's how to set up useful tools
 
 ### Navigating VS Code
 
+**Activity Bar:**
+
+- Located on the very left of the window, provides icons to switch between views like Explorer, Search, Source Control, Run and Debug, Extensions, and more (based on installed extensions).
+
+  <img src="./images/Activity bar.png" alt="Open with Live Server" width="500" height="400">
+
 **Explorer Panel:**
 
 - Located on the left, shows all files in your project folder.
@@ -186,6 +192,12 @@ VS Code has a powerful extensions marketplace. Here's how to set up useful tools
 - The central area where you write and edit your code.
 
   <img src="./images/Editor Area.png" alt="Open with Live Server" width="500" height="400">
+
+**Panel**
+
+- Located below the editor area, displays Terminal, Problems, Output & Debug Console
+
+  <img src="./images/Panel area.png" alt="Open with Live Server" width="500" height="400">
 
 **Status Bar:**
 
