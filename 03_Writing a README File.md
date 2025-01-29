@@ -38,7 +38,7 @@ A typical README includes the following sections:
      ```
 4. **Usage:** How to use the project or view the website.
    - Example:
-     ```vbnet
+     ```
      Open the site in your browser to explore the portfolio sections: About Me, Projects, and Contact.
      ```
 5. **Contributors:** A list of contributors to the project.
