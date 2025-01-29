@@ -27,7 +27,7 @@ To use GitHub, you first need to create an account. Here’s how to do it:
 
 1. **Go to GitHub**: Open [GitHub's website](https://github.com/).
 2. **Sign Up**: Click the "Sign up" button and follow the prompts to create an account.
-3. **Verify Email**: You will receive a confirmation email—click the link in the email to verify your account.
+3. **Verify Email**: You w receive a confirmation email—click the link in the email to verify your account.
 4. **Set up your profile**: Add your name, profile picture, and any other information you want to share.
 
 Once you have your GitHub account set up, you can start creating repositories and managing your code remotely.
@@ -96,3 +96,15 @@ Once your local repository is connected to GitHub, you can push changes to the r
    - The `-u` flag tells Git to remember the remote branch (you only need to use it the first time).
    - `origin` is the name of your remote repository.
    - `main` is the default branch name. (If your default branch is named master, use that instead.)
+
+## Activities
+
+- Create a new repository on Github, name it `my-project`.
+- Select Public or Private visibility.
+- Do not initialize the repository with a README file.
+- Connect local repository to Github.
+- Push local changes to Github.
+- Verify changes on Github, reload the repo and verify that the README file appears with the content you created locally.
+- Add a new section to the local README called Skills, list your skills (Github, markdown, etc) under the section.
+- Commit and push your changes to the remote repo.
+- Confirm that the updates appear on the remote repo.
