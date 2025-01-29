@@ -90,9 +90,10 @@ git merge <branch-name>
    ```
 2. Merge the feature branch:
    `bash
- git merge feature/navigation-bar
- `
-   **Illustration:**
+git merge feature/navigation-bar
+`
+
+**Illustration:**
 
 Before merging:
 
