@@ -19,8 +19,8 @@ When a new branch is created, it diverges from the main branch:
 
 ```plaintext
 Main:    A -- B -- C
-Feature:          \
-                   D
+                  \
+Feature:           D
 ```
 
 ## Why Use Branches?
@@ -99,8 +99,8 @@ Before merging:
 
 ```plaintext
 Main:    A -- B -- C
-Feature:          \
-                   D
+                  \
+Feature:           D
 ```
 
 After merging:
