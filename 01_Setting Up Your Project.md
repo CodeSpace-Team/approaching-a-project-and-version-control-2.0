@@ -121,23 +121,38 @@ A text editor is a vital tool for writing and managing code in web development. 
 
 ### Step-by-Step Guide to Using VS Code
 
-1. Installing VS Code
+1. **Installing VS Code**
+
    - Download from the official website: [Visual Studio Code](https://code.visualstudio.com/).
    - Follow the installation instructions for your operating system (Windows, macOS, or Linux).
-2. Opening Files and Folders in VS Code
 
-   **Open a Folder (Recommended for Projects):**
+2. **Creating and opening files and folders:**
+
+   - On your computer, create a folder where you want your project to live (e.g., “my-project”). To keep things organized, it is recommended that you group all you projects under main folder e.g `Codespace Projects/Practice/my-project`. This way you'll have a clear structure like below:
+
+     ```markdown
+     Codespace Projects/
+     Practice/
+     my-project/
+     another-project/
+     SDF/
+     sdf01/
+     sdf02/
+     ```
 
    - Launch VS Code.
    - Go to `File > Open Folder`.
-   - Select the folder where your project files (e.g., `index.html, styles.css`) are stored.
+   - Navigate to your project folder (`Codespace Projects/Practice/my-project`) and open it.
 
-     **Opening Individual Files:**
+3. **Add New Files:**
 
-   - Drag and drop the file (e.g., `index.html`) into VS Code.
-   - Or, go to `File > Open File` and navigate to the file's location.
-
-**Tip:** Always open the project folder instead of individual files to keep everything organised.
+- In the Explorer Panel (on the left):
+  1. Hover over the project folder (e.g., `my-project`).
+  2. Click the small **New File** icon (a document with a plus symbol).
+  3. Type the name of the file, including its extension (e.g., `index.html`).
+  4. Press Enter to create the file.
+- Repeat to create additional files (e.g., `styles.css`, `README.md`).
+- For practice, copy snippets of `index.html` and `styles.css` given in section above and paste them to respective files you have just created. Leave the `README` file blank for now, it's contents will be filled in the following lessons.
 
 ## Customising VS Code with Extensions
 
@@ -227,10 +242,10 @@ The terminal in VS Code allows you to run commands without leaving the editor.
 
 ## Activities
 
-1. Set Up Live Server:
+1. First Project Setup:
 
-   - Install the Live Server extension.
-   - Create a basic `index.html` file and test it in the browser using Live Server.
+   - Make sure you have followed the steps above for creating your first project and have added provided code snippets to respective files.
+   - Open your project with Live Server to see what it looks like.
 
 2. Customise Your Workspace:
 

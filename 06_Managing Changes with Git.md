@@ -36,8 +36,6 @@ Good commit messages make it easy to understand changes when revisiting the hist
 2. Be concise but descriptive.
 3. Include context if needed, e.g., referencing an issue or feature.
 
-**_Illustration: Show a side-by-side comparison of good vs. bad commit messages in a table format._**
-
 ## The Git Workflow
 
 ### Stage Changes with `git add`
@@ -62,7 +60,6 @@ Good commit messages make it easy to understand changes when revisiting the hist
   ```bash
   git commit
   ```
-  **_Illustration: Provide a flowchart showing the transition from editing a file, staging it, and committing it._**
 
 ## Viewing Commit History
 
@@ -88,7 +85,6 @@ Good commit messages make it easy to understand changes when revisiting the hist
   ```bash
   git log --graph --oneline
   ```
-  **_Illustration: Show an annotated screenshot of the git log output._**
 
 ## Undoing Changes and Fixing Mistakes
 
@@ -124,12 +120,11 @@ Good commit messages make it easy to understand changes when revisiting the hist
    git checkout commit-hash -- filename
    ```
 2. Alternatively, use `git restore`:
-   `bash
+   ```bash
     git restore --source=commit-hash filename
-    `
-   **_Illustration: Include a step-by-step visual guide for restoring a file from a previous commit._**
+   ```
 
-## ctivities
+## Activities
 
 ### Making and Viewing Commits
 

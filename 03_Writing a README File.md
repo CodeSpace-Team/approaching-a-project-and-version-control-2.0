@@ -113,11 +113,7 @@ In this section, we'll demonstrate how to use Git to track changes to your READM
 
 1. **Create a README File**
 
-   In your project directory, create a new file:
-
-   ```bash
-   touch README.md
-   ```
+   In your project directory, create a `README.md` file if you had not done so in the previous lesson.
 
 2. **Write the README Content**
 
@@ -179,9 +175,9 @@ git commit -m "Add README file with project details"
 - **Preview Markdown:** Before committing your changes, use the Markdown Preview feature in VS Code to ensure your README looks as expected.
 - **Use badges:** You can add badges for build status, licensing, or any other important metrics.
 
-**Illustration Example:**
+**Raw and Preview Markdown in VS Code:**
 
-_A screenshot showing the rendered README.md file in VS Code's Markdown preview, demonstrating the live changes as you edit._
+<img src="./images/Markdown Preview.png" alt="Open with Live Server" >
 
 ## Key Takeaways
 

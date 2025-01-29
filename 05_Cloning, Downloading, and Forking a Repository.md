@@ -20,10 +20,9 @@ Downloading a repository is the process of retrieving all the files from a GitHu
 1. Go to the GitHub repository’s main page.
 2. Locate the green Code button.
 3. Click on it and select Download ZIP.
+   <img src="./images/Downloading repo.png">
 4. The repository will be downloaded as a ZIP file to your computer.
 5. Extract the ZIP file to access the project files.
-
-**_Illustration: Include a screenshot or diagram showing the steps to download a ZIP file._**
 
 ## Cloning a Repository
 
@@ -33,25 +32,46 @@ Cloning creates a local copy of a remote repository on your computer. Unlike dow
 
 ### How to Clone a Repository with `git clone`
 
-1. Open your terminal or command prompt.
-2. Navigate to the folder where you want to save the repository:
-   ```bash
-   cd path/to/your/folder
-   ```
-3. Copy the repository URL from GitHub. This is located under the Code button.
-4. Run the command:
-   ```bash
-   git clone <repository-url>
-   ```
-   For example:
-   ```bash
-   git clone https://github.com/user/repository.git
-   ```
-5. The repository is now cloned locally. Navigate into the repository folder:
-   `bash
-    cd repository  
-    `
-   **_Illustration: Provide a flowchart showing the process from copying the URL to running git clone._**
+If you've already created or selected a parent folder for your repository and opened it in VS Code, follow these steps:
+
+1. Open the Integrated Terminal:
+
+   - In VS Code, open the Integrated Terminal by clicking on Terminal > New Terminal or using the shortcut Ctrl + `.
+   - The terminal will start in the folder you’ve opened in VS Code (your parent folder).
+
+2. Select or Create a Parent Folder:
+
+   - Ensure the folder you’ve opened in VS Code is where you want to store the cloned repository.
+     For example:
+     ```
+     Codespace Projects/
+        SDF/  <- This is your parent folder
+     ```
+   - The cloned repository will create its own subfolder inside this parent folder.
+
+3. Copy the Repository URL from GitHub:
+
+   - Go to the repository on GitHub.
+   - Click the green Code button and copy the repository URL (e.g., https://github.com/user/repository.git).
+
+4. Clone the Repository:
+   - In the Integrated Terminal, run the following command:
+     ```bash
+     git clone <repository-url>
+     ```
+   - For example:
+     ```bash
+     git clone https://github.com/user/repository.git
+     ```
+5. Navigate to the Cloned Repository:
+   - Once the repository is cloned, Git will automatically create a subfolder with the same name as the repository (e.g., repository).
+   - Move into the cloned repository folder by running:
+     ```bash
+     cd repository
+     ```
+6. Verify the Files in VS Code:
+   - The cloned repository will appear as a subfolder in the Explorer Panel on the left.
+   - If needed, you can switch to the cloned folder in VS Code by going to File > Open Folder and selecting the repository folder.
 
 ## Forking a Repository
 
@@ -90,9 +110,8 @@ Forking creates a personal copy of someone else’s repository in your GitHub ac
   ```
 - Push changes to your forked repository:
   `bash
-    git push  
-    `
-  **_Illustration: Include a diagram showing the forking and cloning process, with arrows indicating the flow from the original repository to the forked one, then to the local machine._**
+git push  
+`
 
 ## Activities
 
